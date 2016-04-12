@@ -1,0 +1,57 @@
+<div class="container">
+    <div class="header clearfix test-muted">
+        <h3 class="text-muted text-center"><strong><i class="fa fa-github"></i>.NET Project</strong></h3></h3>
+    </div>
+
+    <div class="jumbotron">
+        <h4 class="header text-center"><strong>Lahjapaja Oy (Information managment system, 12 credit):</strong></h4>
+
+        <p>
+        <h4>
+            <small>LogIn as costumer, employee and admin with different right. For example, costumer can only see the
+                order while employee can CURD costumer info and admin can CURD employee and costumer both.
+            </small>
+        </h4>
+        </p>
+        <p><h4><strong>#Bootstrap #JQuery #MVC 4 #C-Sharp #.Net #MSSQL #Azure deployment, #Github</strong></h4></p>
+        <p>
+        <h4>
+            <small>Lacks: frontend design breakdown , password lacks encryption not secured for production</small>
+        </h4>
+        </p>
+        <table class="table table-bordered ">
+            <tbody>
+            <tr>
+                <td>Role</td>
+                <td>Username</td>
+                <td>Password</td>
+            </tr>
+            <tr>
+                <td>admin, employee, customer</td>
+                <td>Admin1, Emp1, Cust1</td>
+                <td>1234</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="container">
+            <div class="row placeholders">
+                <div class="col-md-6 r text-center">
+                    <%= link_to '<strong>Demo app</strong><i class="fa fa-eye"></i>'.html_safe, 'http://layaapaja.azurewebsites.net/', class: 'btn btn-success', :target => '_blank' %>
+                </div>
+                <div class="col-md-6 text-center">
+                    <%= link_to '<strong>Github</strong><i class="fa fa-github"></i>'.html_safe,'https://github.com/surajneupane55/Mvc_Project', class: 'btn btn-success', :target => '_blank' %>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <%= link_to dashboard_index_path, class: 'btn btn-info' do %>
+            <i class="fa fa-signal"></i><strong> Back to Dashboard </strong>
+        <% end %>
+    </div>
+
+
+</div>
+
+<!-- /.container -->
+

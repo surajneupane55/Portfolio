@@ -3,15 +3,46 @@
         <i class="fa fa-signal"></i>
         <strong>Dashboard</strong>
     </h3>
+
     <div class="row placeholders">
-        <div class="col-xs-6 col-md-4 placeholder">
-            <h3 class="text-success"><strong>Basic School Projects </strong><i class="fa fa-bars"></i> <i class="fa fa-arrow-circle-o-down"></i></h3>
+        <div class="col-md-4 placeholder text-center">
+            <%= link_to school_index_path, class: 'btn btn-success' do %>
+                <strong>Basic School
+                    Projects </strong><i class="fa fa-bars"></i><i class="fa fa-arrow-circle-o-down"></i>
+            <% end %>
         </div>
-        <div class="col-xs-6 col-md-4 placeholder">
-            <h3 class="text-success"><strong>Intermediate Projects </strong><i class="fa fa-bars"></i> <i class="fa fa-arrow-circle-o-down"></i></h3>
+        <div class=" col-md-4 placeholder text-center">
+            <%= link_to intermediated_index_path, class: 'btn btn-success' do %>
+                <strong>Intermediate
+                    Projects </strong><i class="fa fa-bars"></i><i class="fa fa-arrow-circle-o-down"></i>
+            <% end %>
         </div>
-        <div class="col-xs-6 col-md-4 placeholder">
-            <h3 class="text-success"><strong>Advance Projects </strong><i class="fa fa-bars"></i> <i class="fa fa-arrow-circle-o-down"></i></h3>
+        <div class="col-md-4 placeholder dropdown">
+            <%= link_to advance_index_path, class: 'btn btn-success' do %>
+                <strong>Advance
+                    Projects </strong><i class="fa fa-bars"></i><i class="fa fa-arrow-circle-o-down"></i>
+            <% end %>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+<div class="container">
+    <br><br><br><br><br><br><br><br><br>
+
+    <div class=" col-md-4">
+        <div class="text-center">
+        </div>
+    </div>
+    <div class=" col-md-4">
+        <div class="text-center">
+            <%= link_to root_path, class: 'btn btn-info' do %>
+                <i class="fa fa-home"></i><strong> Back to Home </strong>
+            <% end %>
+        </div>
+    </div>
+    <div class=" col-md-4">
+        <div class="text-center">
+
         </div>
     </div>
 </div>

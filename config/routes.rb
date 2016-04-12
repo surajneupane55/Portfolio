@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  get 'advance/index'
+
+  get 'intermediated/index'
+
+  get 'school/index'
+
   get 'dashboard/index'
 
   # The priority is based upon order of creation: first created -> highest priority.

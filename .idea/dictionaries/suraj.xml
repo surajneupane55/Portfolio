@@ -4,6 +4,7 @@
       <w>adress</w>
       <w>firstname</w>
       <w>lastname</w>
+      <w>slidedown</w>
     </words>
   </dictionary>
 </component>
