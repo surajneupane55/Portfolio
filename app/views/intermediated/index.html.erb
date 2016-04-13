@@ -1,2 +1,42 @@
-<h1>Intermediated#index</h1>
-<p>Find me in app/views/intermediated/index.html.erb</p>
+<div class="container">
+    <h3 class="header text-muted text-center">
+        <strong><i class="fa fa-github" aria-hidden="true"></i> Open Source Project</strong>
+    </h3>
+
+    <div class="jumbotron">
+        <h4 class="header">
+            <strong><i class="fa fa-hand-o-right" aria-hidden="true"></i> Reaktor Summer Intern App Challenge
+                2015</strong>
+        </h4>
+
+        <p>
+        <h4>
+            <small>URL shortening app which saves long url and generate a random id and attach with base
+                url(https://dry-earth-7085.herokuapp.com/)
+            </small>
+        </h4>
+         <p><h4><strong>#Bootstrap #JQuery #Ruby on Rails #Posgres #Heroku deployment, #Github</strong></h4></p>
+        <p>
+        <h4>
+            <small>Flaws:UI design, not tested</small>
+        </h4>
+        </p>
+        <div class="row placeholders">
+            <div class="col-md-6">
+                <%= link_to '<strong>Demo app</strong><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>'.html_safe, 'http://layaapaja.azurewebsites.net/', class: 'btn btn-success', :target => '_blank' %>
+            </div>
+
+
+            <br><br><br><br><br>
+
+            <div class="container">
+                <div class="text-center">
+                    <%= link_to dashboard_index_path, class: 'btn btn-info' do %>
+                        <i class="fa fa-arrow-left" aria-hidden="true"></i><strong> Back to Dashboard </strong>
+                    <% end %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

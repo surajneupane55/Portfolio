@@ -5,7 +5,6 @@
     <div class="container">
         <div class="jumbotron">
             <h4 class="header text-center"><strong>Lahjapaja Oy (Information managment system, 12 credit):</strong></h4>
-
             <p>
             <h4>
                 <small>LogIn as costumer, employee and admin with different right. For example, costumer can only see
@@ -17,7 +16,7 @@
             <p><h4><strong>#Bootstrap #JQuery #MVC 4 #C-Sharp #.Net #MSSQL #Azure deployment, #Github</strong></h4></p>
             <p>
             <h4>
-                <small>Lacks: frontend design breakdown , password lacks encryption not secured for production</small>
+                <small>Flaws: frontend design breakdown , password lacks encryption not secured for production</small>
             </h4>
             </p>
             <table class="table table-bordered ">
@@ -37,23 +36,23 @@
             <div class="container">
                 <div class="row placeholders">
                     <div class="col-md-6 r text-center">
-                        <%= link_to '<strong>Demo app</strong><i class="fa fa-eye"></i>'.html_safe, 'http://layaapaja.azurewebsites.net/', class: 'btn btn-success', :target => '_blank' %>
+                        <%= link_to '<strong>Demo app</strong><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>'.html_safe, 'http://layaapaja.azurewebsites.net/', class: 'btn btn-success', :target => '_blank' %>
                     </div>
                     <div class="col-md-6 text-center">
                         <%= link_to '<strong>Github</strong><i class="fa fa-github"></i>'.html_safe, 'https://github.com/surajneupane55/Mvc_Project', class: 'btn btn-success', :target => '_blank' %>
+                    </div>
+                    <br><br><br><br><br>
+                    <div class="container">
+                        <div class="text-center">
+                            <%= link_to dashboard_index_path, class: 'btn btn-info' do %>
+                                <i class="fa fa-arrow-left" aria-hidden="true"></i><strong> Back to Dashboard </strong>
+                            <% end %>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="text-center">
-            <%= link_to dashboard_index_path, class: 'btn btn-info' do %>
-                <i class="fa fa-signal"></i><strong> Back to Dashboard </strong>
-            <% end %>
-        </div>
-    </div>
-
 
 </div>
 
