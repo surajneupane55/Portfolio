@@ -33,13 +33,10 @@
         </p>
         <div class="row placeholders">
             <div class="col-md-6">
-                <%= link_to '<strong>Demo app</strong><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>'.html_safe, 'http://learningmarket.azurewebsites.net/', class: 'btn btn-success', :target => '_blank' %>
+                <%= link_to '<strong><strike>Demo app</strike></strong><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>'.html_safe, 'http://learningmarket.azurewebsites.net/', class: 'btn btn-success disabled', :target => '_blank' %>
             </div>
         </div>
-
-
-            <br><br><br><br><br>
-
+        <br><br><br><br><br>
             <div class="container">
                 <div class="text-center">
                     <%= link_to dashboard_index_path, class: 'btn btn-info' do %>
