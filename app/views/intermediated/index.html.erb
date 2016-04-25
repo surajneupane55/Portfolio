@@ -1,56 +1,71 @@
 <div class="container">
-    <h3 class="header text-muted text-center">
-        <strong><i class="fa fa-github" aria-hidden="true"></i> Open Source Project</strong>
-    </h3>
+  <h3 class="header text-muted text-center">
+    <strong><i class="fa fa-github" aria-hidden="true"></i> Open Source Project</strong>
+  </h3>
 
-    <div class="jumbotron">
-        <h4 class="header">
-            <strong><i class="fa fa-hand-o-right" aria-hidden="true"></i> Reaktor Summer Intern App Challenge
-                2015</strong>
+  <div class="row placeholders">
+    <div class="col-md-12 placeholder">
+      <div class="col-md-8 placeholder">
+        <h4 class="header text-info">
+          <strong><i class="fa fa-hand-o-right" aria-hidden="true"></i> Reaktor Summer Intern App Challenge
+            2015
+          </strong>
         </h4>
         <p>
-        <h4>
+          <h4>
             <small>URL shortening app which saves long url and generate a random id and attach with base
-                url(https://dry-earth-7085.herokuapp.com/)
+              url(https://dry-earth-7085.herokuapp.com/)
             </small>
-        </h4>
+          </h4>
         </p>
+      </div>
+      <div class="col-md-2 placeholder">
+        <%= link_to '<strong>Demo app</strong><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>'.html_safe, 'https://dry-earth-7085.herokuapp.com/', class: 'btn btn-success', :target => '_blank' %>
+      </div>
+      <div class="col-md-2 placeholder">
+        <%= link_to '<strong>Github</strong><i class="fa fa-github"></i>'.html_safe, 'https://github.com/surajneupane55/ReaktorUrlShorteningTask', class: 'btn btn-success', :target => '_blank' %>
+      </div>
+    </div>
+    <div class="col-md-12 placeholder">
+      <div class="col-md-8 placeholder">
+      <h4 class="header text-info">
+        <strong><i class="fa fa-hand-o-right" aria-hidden="true"></i> Learning to trade NASDAQ!
+        </strong>
+      </h4>
+      <p>
+      <h4>
+        <small>LAMP stack app, let you create account and provide you with 10000 USD to buy and sale NASDAQ stock, you
+          can follow your performance!
+        </small>
+        <small class="text-danger">This app will be upgraded to production level in advance projects</small><br><small class="text-warning">UserName:surajnew55<br>PassWord:44</small>
 
-        <div class="row placeholders">
-            <div class="col-md-6">
-                <%= link_to '<strong>Demo app</strong><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>'.html_safe, 'https://dry-earth-7085.herokuapp.com/', class: 'btn btn-success', :target => '_blank' %>
-            </div>
-        </div>
-        <br><br>
-        <h4 class="header">
-            <strong><i class="fa fa-hand-o-right" aria-hidden="true"></i> Learning to trade NASDAQ!
-            </strong>
-        </h4>
-        <p>
-        <h4>
-            <small>LAMP stack app, let you create account and provide you with 10000 USD to buy and sale NASDAQ stock, you can follow your performance!
-            </small>
-            <small class="text-danger">This app will be upgraded to production level in advance projects</small>
-            <strong><br><br>USERNAME:surajnew55<br>PASSWORD:44</strong>
-        </h4>
-        </p>
-        <div class="row placeholders">
-            <div class="col-md-6">
-                <%= link_to '<strong>Demo app</strong><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>'.html_safe, 'http://learningmarket.azurewebsites.net/', class: 'btn btn-success', :target => '_blank' %>
-            </div>
-        </div>
-
-
-            <br><br><br>
-
-            <div class="container">
-                <div class="text-center">
-                    <%= link_to dashboard_index_path, class: 'btn btn-info' do %>
-                        <i class="fa fa-arrow-left" aria-hidden="true"></i><strong> Back to Dashboard </strong>
-                    <% end %>
-                </div>
-            </div>
+      </h4>
+      </p>
 
     </div>
+      <div class="col-md-2 placeholder">
+        <%= link_to '<strong>Demo app</strong><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>'.html_safe, 'http://learningmarket.azurewebsites.net/', class: 'btn btn-success', :target => '_blank' %>
+      </div>
+      <div class="col-md-2 placeholder">
+        <%= link_to '<strong>Github</strong><i class="fa fa-github"></i>'.html_safe, 'https://github.com/surajneupane55/Php-MyApp', class: 'btn btn-success', :target => '_blank' %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<br><br><br>
+<br><br><br>
+
+<div class="container">
+  <div class="text-center">
+    <%= link_to dashboard_index_path, class: 'btn btn-info' do %>
+        <i class="fa fa-arrow-left" aria-hidden="true"></i><strong> Back to Dashboard </strong>
+    <% end %>
+  </div>
+</div>
 </div>
 

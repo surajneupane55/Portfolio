@@ -15,14 +15,11 @@
  */
 
 
-.circle
+.well-bg
 {
-    height:50px;
-    width:50px;
-    background:green;
-    border-radius: 100px;
-    text-align:center;
-    line-height:80px;
+
+    background:#A9BCF5;
+
 
 
 }
