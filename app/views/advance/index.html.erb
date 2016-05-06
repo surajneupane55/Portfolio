@@ -1,52 +1,93 @@
 <div class="container">
-    <h3 class="header text-muted text-center">
-        <strong><i class="fa fa-github" aria-hidden="true"></i> API on Javascript, Rails, Php...  </strong>
-    </h3>
+  <h3 class="header text-muted text-center">
+    <strong><i class="fa fa-github" aria-hidden="true"></i> API, Ruby on Rails, AngularJs SPA...... </strong>
+  </h3>
 
-    <div class="jumbotron">
-        <h4 class="header">
-            <strong><i class="fa fa-hand-o-right" aria-hidden="true"></i>Angular on Rails API...</strong>
-        </h4>
+  <div class="container">
+    <h4 class="header">
+      <strong class="text-info"><i class="fa fa-hand-o-right" aria-hidden="true"></i>Angular on Rails JSON API...TODO
+        APPLICATION</strong>
+      <%= link_to  '<strong>Demo app</strike></strong><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>'.html_safe, 'https://radiant-coast-44956.herokuapp.com/', class: 'btn btn-success pull-right', :target => '_blank' %>
+    </h4>
 
-        <p>
-        <h4>
-            <small>Secure and well tested API with devise gem for authentication, TODO App</small><strong class="text-danger"><br> working progress with angularjs frontend data handling...</strong>
 
-        </h4>
-        </p>
-        <div class="row placeholders">
-            <div class="col-md-6">
-                <%= link_to '<strong><strike>Demo app</strike></strong><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>'.html_safe, 'https://enigmatic-oasis-8844.herokuapp.com/', class: 'btn btn-success', :target => '_blank' %>
-              <%= link_to '<strong>Demo app</strong><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>'.html_safe, 'https://enigmatic-oasis-8844.herokuapp.com/', class: 'btn btn-success', :target => '_blank' %>
+    <p>
+    <h5>
+      <strong class="text-muted"></strong>
+      <strong class="text-danger"><br> working progress with angularjs frontend data handling...</strong>
+    </h5>
+    </p>
+    <div class="row placeholders">
+      <div class="col-md-6">
+        <%= image_tag('api-img2.png', :alt => ' Generic placeholder thumbnail', class: 'img-rounded') %>
 
-            </div>
+      </div>
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <!-- Default panel contents -->
+          <div class="panel-heading "><strong>API test with curl</strong></div>
+          <div class="panel-body">
+            <p>Providing basic http authentication USERNAME:PASSWORD create a session in API and should return a
+              authenticate_token:
+              <code> https://radiant-coast-44956.herokuapp.com/api/session -d '' -u abc@123.com:12345678</code></p>
+          </div>
+
+          <!-- List group -->
+          <ul class="list-group">
+            <li class="list-group-item">Return back TOKEN is build inside request header for further CURD communication
+              with API.
+              <code>@host = curl -H "X-Authenticate-Token: TOKEN" https://radiant-coast-44956.herokuapp.com/</code></li>
+            <li class="list-group-item">Lists all the Task for authenticated user: <code>@host/api/tasks.json</code>
+            </li>
+            <li class="list-group-item">Lists all todo for task_id : <code>@host/api/tasks/task_id/lists.json</code>
+            </li>
+            <li class="list-group-item">Create new task with :task_id :
+              <code>@host/api/tasks/:task_id -d '{"task": {"name": "Mother's Day todo"}}' -H 'Content-Type:
+                application/json'</code></li>
+            <li class="list-group-item">Update task with task_id :
+              <code>@host/api/tasks/task_id -d '{"task": {"name": "Mother's Day morning todo"}}' -H 'Content-Type:
+                application/json' -X PATCH
+              </code></li>
+            <li class="list-group-item">Lists all todo list for Task with task_id :
+              <code>@host/api/tasks/task_id/lists</code></li>
+            <li class="list-group-item">Create todo list item for Task with task_id :
+              <code>@host/api/tasks/task_id/lists -d '{"list": {"description": "travelling"}}' -H 'Content-Type:
+                application/json'</code></li>
+            <li class="list-group-item">Update todo list item for task with task_id :
+              <code>@host/api/tasks/task_id/list/list_id -d '{"list": {"due_date": "2016-05-04"}}' -H 'Content-Type:
+                application/json' -X PATCH</code></li>
+            <li class="list-group-item"><strong>Delete session for active user</strong>
+              <code>https://radiant-coast-44956.herokuapp.com/api/session?authenticate_token=TOKEN -X DELETE</code></li>
+
+          </ul>
         </div>
-        <br>
-
-        <h4 class="header">
-            <strong><i class="fa fa-hand-o-right" aria-hidden="true"></i> PHP learning stock trading...</strong>
-        </h4>
-
-        <p>
-        <h4>
-            <small><strike>Create secure account where 10000 USD will be deposited and choose a NASDAQ stocks to buy or sales and track your performances. No real money is involved just for learning purpose</strike></small>
-           <h4 class="text-danger"><strong> Work in progress.....</strong></h4>
-        </h4>
-        </p>
-        <div class="row placeholders">
-            <div class="col-md-6">
-                <%= link_to '<strong><strike>Demo app</strike></strong><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>'.html_safe, 'http://learningmarket.azurewebsites.net/', class: 'btn btn-success disabled', :target => '_blank' %>
-            </div>
-        </div>
-        <br><br><br><br><br>
-            <div class="container">
-                <div class="text-center">
-                    <%= link_to dashboard_index_path, class: 'btn btn-info' do %>
-                        <i class="fa fa-arrow-left" aria-hidden="true"></i><strong> Back to Dashboard </strong>
-                    <% end %>
-                </div>
-            </div>
-
+          <div class="text-center">
+            <%= link_to dashboard_index_path, class: 'btn btn-info' do %>
+                <i class="fa fa-arrow-left" aria-hidden="true"></i><strong> Back to Dashboard </strong>
+            <% end %>
+          </div>
+      </div>
     </div>
+  </div>
+  <br>
+
+  <!--  <h4 class="header">
+      <strong><i class="fa fa-hand-o-right" aria-hidden="true"></i> PHP learning stock trading...</strong>
+    </h4>
+
+    <p>
+    <h4>
+      <small>
+        <strike>Create secure account where 10000 USD will be deposited and choose a NASDAQ stocks to buy or sales and
+          track your performances. No real money is involved just for learning purpose</strike></small>
+      <h4 class="text-danger"><strong> Work in progress.....</strong></h4>
+    </h4>
+    </p>
+    <div class="row placeholders">
+      <div class="col-md-6">
+      </div>
+    </div>-->
+
+
 </div>
 
