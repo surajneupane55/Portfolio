@@ -39,10 +39,10 @@
               <code>@host = curl -H "X-Authenticate-Token: TOKEN" https://radiant-coast-44956.herokuapp.com/</code></li>
             <li class="list-group-item">Lists all the Task for authenticated user: <code>@host/api/tasks.json</code>
             </li>
-            <li class="list-group-item">Lists all todo for task_id : <code>@host/api/tasks/task_id/lists.json</code>
+            <li class="list-group-item">Lists all todo for task : <code>@host/api/tasks/task_id/lists.json</code>
             </li>
             <li class="list-group-item">Create new task with :task_id :
-              <code>@host/api/tasks/:task_id -d '{"task": {"name": "Mother's Day todo"}}' -H 'Content-Type:
+              <code>@host/api/tasks -d '{"task": {"name": "Mother's Day todo"}}' -H 'Content-Type:
                 application/json'</code></li>
             <li class="list-group-item">Update task with task_id :
               <code>@host/api/tasks/task_id -d '{"task": {"name": "Mother's Day morning todo"}}' -H 'Content-Type:
