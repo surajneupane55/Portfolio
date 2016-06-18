@@ -1,49 +1,48 @@
 <div class="container">
-    <h3 class=" header text-muted text-center">
-        <i class="fa fa-signal"></i>
-        <strong>Dashboard</strong>
-    </h3>
+  <h3 class=" header text-muted text-center">
+    <i class="fa fa-signal"></i>
+    <strong>Dashboard</strong>
+  </h3>
 
-    <div class="container">
-        <div class="row placeholders">
-            <div class="col-md-4 placeholder text-center">
-              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
-                <strong>Basic School
-                  Projects </strong><i class="fa fa-bars"></i><i class="fa fa-arrow-circle-o-down"></i>
-              </button>
-            </div>
-            <div class=" col-md-4 placeholder text-center">
-                <%= link_to intermediated_index_path, class: 'btn btn-success' do %>
-                    <strong>Intermediate
-                        Projects </strong><i class="fa fa-bars"></i><i class="fa fa-arrow-circle-o-down"></i>
-                <% end %>
-            </div>
-            <div class="col-md-4 placeholder text-center">
-                <%= link_to advance_index_path, class: 'btn btn-success' do %>
-                    <strong>Advance
-                        Projects </strong><i class="fa fa-bars"></i><i class="fa fa-arrow-circle-o-down"></i>
-                <% end %>
-            </div>
-        </div>
+  <div class="container">
+    <div class="row placeholders">
+      <div class="col-md-4 placeholder text-center">
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+          <strong>Basic School
+            Projects </strong><i class="fa fa-bars"></i><i class="fa fa-arrow-circle-o-down"></i>
+        </button>
+      </div>
+      <div class=" col-md-4 placeholder text-center">
+        <%= link_to intermediated_index_path, class: 'btn btn-success' do %>
+            <strong>Intermediate
+              Projects </strong><i class="fa fa-bars"></i><i class="fa fa-arrow-circle-o-down"></i>
+        <% end %>
+      </div>
+      <div class="col-md-4 placeholder text-center">
+        <%= link_to advance_index_path, class: 'btn btn-success' do %>
+            <strong>Advance
+              Projects </strong><i class="fa fa-bars"></i><i class="fa fa-arrow-circle-o-down"></i>
+        <% end %>
+      </div>
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </div>
 
-    <div class=" col-md-4">
-        <div class="text-center">
-        </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class=" col-md-4">
+    <div class="text-center">
     </div>
-    <div class=" col-md-4">
-        <div class="text-center">
-            <%= link_to root_path, class: 'btn btn-info' do %>
-                <i class="fa fa-home"></i><strong> Back to Home </strong>
-            <% end %>
-        </div>
+  </div>
+  <div class=" col-md-4">
+    <div class="text-center">
+      <%= link_to root_path, class: 'btn btn-info' do %>
+          <i class="fa fa-home"></i><strong> Back to Home </strong>
+      <% end %>
     </div>
-    <div class=" col-md-4">
-        <div class="text-center">
-
-        </div>
+  </div>
+  <div class=" col-md-4">
+    <div class="text-center">
     </div>
+  </div>
 </div>
 
 
@@ -54,11 +53,14 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel">Note</h4>
       </div>
       <div class="modal-body">
-        These project were created with basic knowledge of programming or school projects.... These work doesn't reflect my current skills. Please feel free to visit advanced or intermediate projects by closing this tab. If you still want to continue please click the link below...
+        These project were created with basic knowledge of programming or school projects.... These work doesn't reflect
+        my current skills. Please feel free to visit advanced or intermediate projects by closing this tab. If you still
+        want to continue please click the link below...
       </div>
       <div class="modal-footer">
         <%= link_to school_index_path, class: 'btn btn-success' do %>
